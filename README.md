@@ -8,7 +8,7 @@ Uses C++17.
 ## You want to compile it (for linux)?
 Before compilation, you need to install SDL2 library packages. For Debian/Ubuntu:
 ```
-sudo apt-get install libsdl2-dev
+sudo apt-get install libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev libsdl2-mixer-dev
 ```
 Just fork the repository and compile it by typing the command:
 ```
