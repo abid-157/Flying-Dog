@@ -80,7 +80,8 @@ void GameOutro::display_text(int score) {
     amatic_bold = TTF_OpenFont("graphics/fonts/Amatic-Bold.ttf", 60); 
     char score_num[6];
     strcpy(score_text, "Congrats!   You scored  ");
-    strcat(score_text, itoa(score, score_num, 10));
+    sprintf(score_num, "%d", score);
+    strcat(score_text, score_num);
     strcat(score_text, "  points !");
     congrat_surf = TTF_RenderText_Blended(amatic_bold, score_text, dark_blue);
     congrat_texture = SDL_CreateTextureFromSurface(renderer, congrat_surf);
